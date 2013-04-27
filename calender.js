@@ -31,6 +31,7 @@
         init: function(){
             var tb = this.createTb();
             var wrap = doc.createElement('div');
+            wrap.className="ns_wrap";
             wrap.innerHTML = tb;
             body.appendChild(wrap);
         },
