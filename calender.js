@@ -31,7 +31,7 @@
         init: function(){
             var tb = this.createTb();
             var wrap = doc.createElement('div');
-            wrap.className="ns_wrap";
+            wrap.className = this.class;
             wrap.innerHTML = tb;
             body.appendChild(wrap);
         },
@@ -103,7 +103,7 @@
                 days = this.getCurMonDay(),
                 line = this.getDateTb();
 
-            var tb = '<table border="0" cellpadding="2" cellspacing="0" class="'+this.class+'">';
+            var tb = '<table border="0" cellpadding="2" cellspacing="0" class="ns_con">';
             //header
             tb += '<tr>';
             tb += '<th colspan="7" class="ns_mon">'+cur.m+'</th>';
